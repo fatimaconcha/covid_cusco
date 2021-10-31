@@ -1,0 +1,1346 @@
+%
+
+%Note: LaTeX Beamer taken from the website: https://www.sharelatex.com/templates/presentations/conference-presentation
+%Note: to find out the RGB code for dolphin: https://tex.stackexchange.com/questions/66465/how-to-get-actual-values-of-colour-theme-colours-in-beamer
+%Note: to convert eps files to pdf: https://docupub.com/pdfconvert/
+
+\documentclass[xcolor=table]{beamer}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{subcaption}
+
+% Change the margin
+%\setbeamersize{text margin left = 2pt, text margin right = 2pt}
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{headline}{}
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+\makeatletter
+\definecolor{beamer@blendedblue}{RGB}{252, 196, 108} % changed this
+
+%\setbeamercolor{normal text}{fg=black,bg=white}
+%\setbeamercolor{alerted text}{fg=red}
+%\setbeamercolor{example text}{fg=green!50!black}
+
+\setbeamercolor{structure}{fg=beamer@blendedblue}
+%\useinnertheme{rounded}
+
+%\renewcommand{\labelitemi}{$\bullet$}
+%\renewcommand{\labelitemii}{$\cdot$}
+%\renewcommand{\labelitemiii}{$\diamond$}
+%\renewcommand{\labelitemiv}{$\ast$}
+
+%colors
+\usecolortheme{dolphin}
+\usepackage{color}
+\definecolor{mycolor1}{RGB}{236, 244, 244}
+\definecolor{mycolor2}{RGB}{164, 92, 92}	
+\definecolor{mycolor3}{RGB}{252, 196, 108}
+\definecolor{mycolor4}{RGB}{76, 60, 52}
+\definecolor{mycolor5}{RGB}{164, 248, 208}
+\definecolor{mycolor6}{RGB}{116, 112, 112}
+\definecolor{mycolor7}{RGB}{116, 116, 52}
+
+\usepackage{fnpct}
+
+\usepackage{subcaption}
+
+\usepackage{newpxtext}
+
+
+%fonts
+\usefonttheme{professionalfonts}
+
+%Other packages
+\usepackage{bm}
+\setbeamercovered{transparent}
+\usepackage[section]{placeins}
+\usepackage{epstopdf}
+\usepackage[table]{xcolor}
+\usepackage{graphicx} %Useful to resize large tables into the frame using \resizebox 
+\usepackage{grffile} %Documentation: http://ctan.sharelatex.com/tex-archive/macros/latex/contrib/oberdiek/grffile.pdf
+\usepackage{marvosym}
+\usepackage[style=british]{csquotes}
+\def\signed #1{{\leavevmode\unskip\nobreak\hfil\penalty50\hskip2em
+		\hbox{}\nobreak\hfill #1
+		\parfillskip=0pt \finalhyphendemerits=0 \endgraf}}
+
+\newsavebox\mybox
+\newenvironment{aquote}[1]
+{\savebox\mybox{#1}\begin{quote}}
+	{\vspace*{1mm}\signed{\usebox\mybox}\end{quote}}
+
+\usepackage{verse}
+\newcommand{\attrib}[1]{
+	\nopagebreak{\raggedleft\footnotesize #1\par}}
+
+%for checkmarks
+\usepackage{tikz}
+
+%For equations
+\usepackage{amsmath, amssymb}
+\usepackage{bbm}
+
+%Tables
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol} 
+\usepackage{booktabs}%\usepackage{booktabs, calc} %This is the package to use to have nice-looking tables. More documentation on the tables in LateX: https://www.tug.org/pracjourn/2007-1/mori/mori.pdf
+\usepackage{threeparttable}  
+
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{pgfplots}
+
+% Count slides
+\setcounter{MaxMatrixCols}{10}
+
+\graphicspath{{../figuras/}}
+%\graphicspath{{../tablas/}}
+
+% Commands -
+\newcommand{\extractRGB}[1]{\extractcolorspecs{#1}{\model}{\dolphin} \convertcolorspec{\model}{\dolphin}{RGB}\printcol \printcol}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par} %to prevent beamer from putting "figure" in front of a caption
+\setbeamertemplate{navigation symbols}{}
+
+%Code to create sections with title pages in Beamer slides
+\AtBeginSection[]{
+	\begin{frame}[plain]
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}
+}
+
+\title{Sala Situacional COVID-19, Región Cusco\footnote{Análisis con información de la región hasta el 23 de octubre del 2021}}
+\author{Fatima Concha \& Johar Cassa} 
+\institute{Dirección de Epidemiología e Investigación \\ \textbf{\color{mycolor3}DEIS, GERESA - Cusco}}
+\date{Semana Epidemiológica 42, 2021}
+
+\begin{document}
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	% TITLE PAGE 
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\setbeamercovered{invisible}
+	\begin{frame}[plain]
+		\titlepage
+	\end{frame}
+
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	% INTRODUCTION 
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	\setcounter{subsection}{1}
+	\begin{frame}[label=indice]
+		\frametitle{Índice}
+		\vspace{-.5cm}
+		\begin{itemize}
+			\item Indicadores epidemiológicos.
+			\begin{itemize}
+				\item Nacional: Variantes, cobertura vacuna, mortalidad, RT, ocupación de camas UCI y no UCI a nivel regional. \hyperlink{epi_nacional}{\beamergotobutton{epi. nacional.}}
+				\item Regional: Curva epidémica, incidencia, tasa de positividad, variantes ({\color{mycolor5}Nuevo} \hyperlink{variantes}{\beamergotobutton{variantes}}), defunciones, RT por distrito, exceso de defunciones, letalidad, mortalidad, y mortalidad por grupos de edad e hitos de vacunación.  \hyperlink{epi_cusco}{\beamergotobutton{epi. cusco.}} 
+			\end{itemize} 
+			\item Cobertura de Vacunación ({\color{mycolor5}Nuevo} \hyperlink{cobertura_vacuna}{\beamergotobutton{cobertura}}). 
+			\item Indicadores de gestión hospitalaria.
+			\begin{itemize}
+				\item Ocupación camas UCI y no UCI a nivel regional y por hospital. \hyperlink{camas}{\beamergotobutton{camas hosp.}} 
+			\end{itemize}
+			\item Indicadores por provincias.
+			\begin{itemize}
+				\item Incidencia, tasa de mortalidad, tasa de letalidad, tasa de positividad PCR, AG, y exceso de mortalidad. \hyperlink{provincias}{\beamergotobutton{provincias}}
+			\end{itemize}
+			\item Resumen y recomendaciones. \hyperlink{resumen}{\beamergotobutton{resumen}} \hyperlink{recomendaciones}{\beamergotobutton{recomendaciones}}
+			\item Links útiles. \hyperlink{links}{\beamergotobutton{links}} \hfill \hyperlink{vacunas_60}{\beamergotobutton{apendice}}
+		\end{itemize}
+	\end{frame}
+	
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	% SECCIÓN 1: Indicadores Epidemiológicos, Nivel Nacional
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\section{Indicadores Epidemiológicos, Nivel Nacional}
+
+	\begin{frame}[label=epi_nacional]
+	\frametitle{Tendencia de Variantes en Lima y la Sierra Selva Sur}
+	\vspace{-.5cm}
+	\begin{figure}
+		\centering
+		\begin{subfigure}[b]{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../sala_nacional/variantes_lima.png}
+			\caption{Lima}
+			%\label{fig:}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.48\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../sala_nacional/variantes_sierra_sur.png}
+			\caption{Sierra Selva Sur}
+			%\label{fig:70 a 79 años}
+		\end{subfigure}
+	\end{figure}
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\
+		Sierra Selva Sur: Apurimac, Ayacucho, Cusco, Madre de Dios, Puno. \\
+		En Lima: Delta domina totalmente, ($ \sim100\% $), pocas muestras. \\
+		Delta domina completamente en Lima y todas las macro-regiones. \\} 
+	\vspace{0.01cm}
+	$\rightarrow$ La variante delta (línea verde) se presenta con mayor frecuencia en la Sierra Selva Sur como en la capital. 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Cobertura de Vacunación COVID-19 por Regiones}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{../sala_nacional/vacunas_nacional.png} 
+	\end{center}
+	\begin{tikzpicture}[overlay]
+		\draw[mycolor2, very thick] (4.6,3.17) circle [x radius=4.0cm, y radius=.11cm, rotate=0];
+	\end{tikzpicture}
+	{\tiny Fuente: Juan Carbajal ($@$juank23\_7). Consultado el 23 de octubre del 2021. \\} 
+	\vspace{0.01cm}
+	$\rightarrow$ Cusco está en el puesto 14.
+\end{frame}
+
+\begin{frame}
+		\frametitle{Mortalidad por Regiones}
+		\vspace{-.2cm}
+		\begin{center}
+			\includegraphics[width=0.75\linewidth]{../sala_nacional/mortalidad_regional.png}
+		\end{center}
+		\begin{tikzpicture}[overlay]
+		\draw[mycolor2, ultra thick] (3.5,4.70) circle [x radius=2.cm, y radius=.13cm, rotate=0];
+		\end{tikzpicture}
+		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\}
+\vspace{0.01cm}
+$\rightarrow$ Cusco se mantiene en el puesto 7, con $ 3,233 $ defunciones por COVID-19 por millón de habitantes. \\
+	\end{frame}
+
+\begin{frame}
+	\frametitle{Defunciones Semanales por Regiones}
+\vspace{-.5cm}
+\begin{center}
+	\includegraphics[width=0.6\linewidth]{../sala_nacional/defunciones_regional.png}
+\end{center}
+\begin{tikzpicture}[overlay]
+	\draw[mycolor2, ultra thick] (5.3,3.62) circle [x radius=3.8cm, y radius=.2cm, rotate=0];
+\end{tikzpicture}
+{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021.\\
+	Nota 1: Records semanales de pandemia (rojo) y 2a ola (amarillo). \\
+Nota 2: Sube $ 14.5.4\% $, 21 fallecidos más. \\
+Alza alta en Lima metropolitana  y resto del país. 
+Mayor alza en costa central. \\
+\textbf{Riesgos}: Lima metropolitana con tres subidas en cinco semanas. Mayor disparidad esta semana. Piura sube, nunca se acercó a cero, otros indicadores suben. \\
+\textbf{Estancamiento}: Casi todas las alzas son leves. Trece regiones suben poco o están estancadas($\pm 1$).\\} 
+\vspace{0.01cm}
+$\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del pico de la segunda ola, la semana anterior fue de $4.43\%$. \\
+\end{frame}
+	
+	\begin{frame}
+		\frametitle{Número Reproductivo Efectivo por Regiones}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.71\linewidth]{../sala_nacional/rt_regional.png}
+		\end{center}
+		\begin{tikzpicture}[overlay]
+		\draw[mycolor2, ultra thick] (5.75,3.87) circle [x radius=3.4cm, y radius=.18cm, rotate=0];
+		\end{tikzpicture}
+	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-21.\\}
+	\vspace{0.01cm}
+	$\rightarrow$ El número reproductivo efectivo (RT) indica la dinámica de la enfermedad; si es menor a $ 1 $, existe control de la epidemia. \\
+	$\nearrow$ Cusco sube a la posición 12 con un RT de $1.01$ $ [0.88-1.14]$.
+
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{Ocupación de Camas UCI Comparativo por Regiones}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.60\linewidth]{../sala_nacional/camas_regional.png}
+	\end{center}
+	\begin{tikzpicture}[overlay]
+	\draw[mycolor2, ultra thick] (4.05,4.0) circle [x radius=.55cm, y radius=.55cm, rotate=0];
+	\end{tikzpicture}
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\
+	Nota 1: Perú: 1039 camas libres, baja $3.3\%$. Lima: 296 camas libres, baja $ 9.5\% $. \\
+	Suben $ >1\% $ {\color{red}*}  Huancavelica (4.5\%), Ayacucho (1.8\%), Madre de Dios (3.2\%), Arequipa (1.3\%) y Moquegua (5.2\%) en el sur, y Tumbes (16.7\%), Piura (6.0\%), La Libertad (4.8\%) y Lima región (4.2\%) en la costa norte y centro. Tumbes y Piura repiten {\color{red}**}. Semanas previas: 6, 5, 5 y 7 regiones. \\ 
+	Muy > que media: Piura (65\%), Ancash (56\%), Lima metropolitana (55\%), Callao (59\%), Loreto (54\%) y {\color{mycolor5}Cusco} (57\%).\\}
+	\vspace{0.01cm}
+	$\rightarrow$ Cusco mantiene el nivel de ocupación con respecto a la semana anterior.
+\end{frame}
+
+	\begin{frame}
+	\frametitle{Ocupación de Camas UCI por Regiones}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.75\linewidth]{../sala_nacional/uci_regional.png}
+	\end{center}
+	\begin{tikzpicture}[overlay]
+	\draw[mycolor2, thick] (5.1,2.25) circle [x radius=3.9cm, y radius=.15cm, rotate=0];
+\end{tikzpicture}
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021.\\}
+	\vspace{0.1cm}
+	$\searrow$ Cusco pasa a la posición 21.
+\end{frame}
+	
+	\begin{frame}
+		\frametitle{Ocupación de Camas No UCI por Regiones}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.75\linewidth]{../sala_nacional/nouci_regional.png} 
+		\end{center}
+		\begin{tikzpicture}[overlay]
+		\draw[mycolor2, thick] (3.5,2.89) circle [x radius=2.0cm, y radius=.15cm, rotate=0];
+		\end{tikzpicture}
+		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\} 
+		\vspace{0.01cm}
+		$\nearrow$ Cusco se pasa al puesto 18.
+		
+		\hyperlink{indice}{\beamergotobutton{Índice}} 
+	\end{frame}
+
+
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% SECCIÓN 2: Indicadores Epidemiológicos, Región Cusco
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\section{Indicadores Epidemiológicos, Región Cusco}
+
+	\begin{frame}[label=epi_cusco]
+		\frametitle{Curva Epidémica, Casos Positivos Semanales}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=.9\linewidth]{../figuras/positivos_20_21.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID. \\
+			Nota: {\color{mycolor1} --- ---: Navidad}, {\color{mycolor1} - -: Año Nuevo}, {\color{mycolor2} - -: Semana Santa}, {\color{mycolor3} - -: Elecciones Primera Vuelta}, {\color{mycolor4} $- \cdot$: Elecciones Segunda Vuelta}. \\}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Curva Epidémica de Sintomáticos y Asintomáticos Semanales}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{../figuras/sintomaticos_20_21.pdf}
+		\end{center} 
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Curva Epidémica de Sintomáticos por Tipo de Prueba}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/sinto_prueba_20_21.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Tasa de Crecimiento de Casos por Semana}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{../figuras/positivos_crecimiento_2021.pdf}
+		\end{center} 
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID. \\
+	Nota:{\color{mycolor1} - -: Año Nuevo}, {\color{mycolor2} - -: Semana Santa}, {\color{mycolor3} - -: Elecciones Primera Vuelta}, {\color{mycolor4} $- \cdot$: Elecciones Segunda Vuelta}. \\}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Tasa de Positividad Semanal por Tipo de Prueba, 2021}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{../figuras/positividad_ambas.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+	\end{frame}
+
+	\begin{frame}[label=variantes]
+	\frametitle{Tendencia de Variantes en la Región Cusco, 2021}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.9\linewidth]{../figuras/variantes.pdf}
+	\end{center}
+	{\tiny Fuente de datos: NETLAB Cusco, UPCH.}
+	\end{frame}
+
+	\begin{frame}[label=mapa_variantes]
+	\frametitle{Cantidad de Casos Variantes y Dispersión Geográfica en las Provincias de Cusco, 2021}
+	\begin{center}
+		\includegraphics[width=0.4\linewidth]{../figuras/variantes_provincial.pdf}
+	\end{center}
+	{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+	
+	Ver detalles para cada la Provincia de Cusco, Distritos de la Región, y por Tipo de variantes haciendo clic en los siguientes enlaces:
+	\hyperlink{mapa_provincia_cusco}{\beamergotobutton{Prov. Cusco}} \hyperlink{mapa_distrital}{\beamergotobutton{Distritos de Cusco}} \hyperlink{mapa_lambda}{\beamergotobutton{Lambda}}
+	\hyperlink{mapa_gamma}{\beamergotobutton{Gamma}}
+	\hyperlink{mapa_delta}{\beamergotobutton{Delta}}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Propagación a Nivel Distrital}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.75\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../sala_nacional/rt_cusco.png}
+	\end{center}
+	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-21. Reporte de número reproductivo efectivo (Rt) de COVID-19. Disponible haciendo clic en el siguiente enlace: \href{https://www.dge.gob.pe/portalnuevo/informacion-publica/reporte-de-numero-reproductivo-efectivo-rt/}{CDC-Rt}. \\}
+	\vspace{0.01cm}
+	$\rightarrow$ Para ver el número exacto de RT por distrito, haga clic en el siguiente link: \href{https://www.dge.gob.pe/portalnuevo/informacion-publica/reporte-de-numero-reproductivo-efectivo-rt/}{\color{mycolor3}reporte-vigilancia-minsa}. \\
+\end{frame}
+	
+	\begin{frame}
+		\frametitle{Defunciones Semanales por COVID-19}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/defunciones_20_21.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SINADEF.\\
+		Nota: {\color{mycolor1} --- ---: Navidad}, {\color{mycolor1} - -: Año Nuevo}, {\color{mycolor2} - -: Semana Santa}, {\color{mycolor3} - -: Elecciones Primera Vuelta}, {\color{mycolor4} $- \cdot$: Elecciones Segunda Vuelta}. \\}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Tasa de Crecimiento de Defunciones por Semana}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{../figuras/defunciones_crecimiento_2021.pdf}
+		\end{center} 
+		{\tiny Fuente de datos: SINADEF. \\
+			Nota: {\color{mycolor1} - -: Año Nuevo}, {\color{mycolor2} - -: Semana Santa}, {\color{mycolor3} - -: Elecciones Primera Vuelta}, {\color{mycolor4} $- \cdot$: Elecciones Segunda Vuelta}. \\}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Exceso de Defunciones por Todas las Causas}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{../figuras/exceso_region.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SINADEF.} 
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Mortalidad por Grupos de Edad}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{../figuras/mortalidad_edad.pdf}
+		\end{center}
+		{\tiny Fuente de datos: SINADEF, Dirección Ejecutiva de Atención Integral de Salud} 
+	\end{frame}
+
+\begin{frame}
+		\frametitle{Mortalidad por Grupos de Edad (e Hitos de Vacunación)}
+	\vspace{-.5cm}
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_80.pdf}
+		\caption{Más de 80 años}
+		%\label{fig:}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_70.pdf}
+		\caption{70 a 79 años}
+		%\label{fig:70 a 79 años}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.3\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_60.pdf}
+		\caption{60 a 69 años}
+		%\label{fig:60 a 69 años}
+	\end{subfigure}
+\vspace{10mm}
+	\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_50.pdf}
+	\caption{50 a 59 años}
+	%\label{fig:50 a 59 años}
+\end{subfigure}
+	\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_40.pdf}
+	\caption{40 a 49 años}
+	%\label{fig:40 a 49 años}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.3\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{../figuras/mortalidad_edad_30.pdf}
+	\caption{30 a 39 años}
+	%\label{fig:40 a 49 años}
+\end{subfigure}
+	%\caption{Three simple graphs}
+	%\label{fig:three graphs}
+\end{figure}
+\vspace{-.8cm}
+		{\tiny Fuente de datos: SINADEF, Dirección Ejecutiva de Atención Integral de Salud.\\}
+		{\tiny Nota: Líneas punteadas (- -) es el inicio de la primera dosis de vacuna contra COVID-19 y línea continua (--) es el inicio de la segunda dosis en el respectivo grupo de edad. Nota 2: Las escalas en el eje y son diferentes.\\}
+		$\rightarrow$ {\small La curva de tasa de mortalidad estuvo en descenso y las vacunas contribuyeron a disminuir aún más la misma.} \hyperlink{indice}{\beamergotobutton{Índice}}
+\end{frame}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% SECCIÓN 2: Indicadores Epidemiológicos, Región Cusco
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\section{Cobertura de Vacunación, Región Cusco}
+
+\begin{frame}[label=cobertura_vacuna]
+	\frametitle{Porcentaje de Cobertura de Vacunación por Grupo de Edad, Región Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_grupo_edad.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco.} 
+\end{frame}
+
+\begin{frame}[label=cobertura_vacuna_provincias]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 80 años a más}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_8.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco.} \hyperlink{indice}{\beamergotobutton{Índice}}
+	
+	Ver detalles de estos indicadores para cada grupo de edad de las provincias haciendo clic en los siguientes enlaces:
+	\hyperlink{vacunas_70}{\beamergotobutton{70 a 79 años}}
+	\hyperlink{vacunas_60}{\beamergotobutton{60 a 69 años}} \hyperlink{vacunas_50}{\beamergotobutton{50 a 59 añosa}} \hyperlink{vacunas_40}{\beamergotobutton{40 a 49 años}} \hyperlink{vacunas_30}{\beamergotobutton{30 a 39 años}}
+	\hyperlink{vacunas_20}{\beamergotobutton{20 a 29 años}} \hyperlink{vacunas_10}{\beamergotobutton{12 a 19 años}}
+	
+\end{frame}
+
+
+
+	%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\textit{}-----------------------------------------
+	% SECCIÓN 2: Indicadores de Gestión Hospitalaria
+	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	\section{Indicadores de Gestión Hospitalaria}
+	
+	\begin{frame}[label=camas]
+		\frametitle{Total y Ocupación de Camas UCI Hospitalarias, 2021}
+		\vspace{-.2cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/uci.pdf}
+			
+		\begin{table}[]
+			\resizebox{8 cm}{!}{%
+				\begin{tabular}{cccc}
+					\hline
+					\multicolumn{4}{c}{\textbf{UCIN,   SE 42}}                                                   \\ \hline
+					TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
+					25               & 12                   & 13                  & 61\%                        \\ \hline
+				\end{tabular}%
+			}
+		\end{table}
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Total y Ocupación de Camas Hospitalarias en el Nivel III, 2021}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/nivel_3.pdf}
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Total y Ocupación de Camas Hospitalarias. Hospital Regional, 2021}
+		\vspace{-.2cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/h_regional}
+			
+			\begin{table}[]
+				\resizebox{8 cm}{!}{%
+					\begin{tabular}{cccc}
+						\hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL REGIONAL, SE 42}}                                 \\ \hline
+						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
+						6               & 5                    & 1                  & 86\%                        \\ \hline
+					\end{tabular}%
+				}
+			\end{table}
+			
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Total y Ocupación de Camas Hospitalarias. Hospital Antonio Lorena, 2021}
+		\vspace{-.2cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/h_lorena}
+			
+			\begin{table}[]
+				\resizebox{8 cm}{!}{%
+					\begin{tabular}{cccc}
+						\hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ANTONIO LORENA, SE 42}}                           \\ \hline
+						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
+						5                & 1                    & 4                  & 43\%                        \\ \hline
+					\end{tabular}%
+				}
+			\end{table}
+			
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Total y Ocupación de Camas Hospitalarias, Hospital Nacional Adolfo Guevara Velasco, 2021}
+		\vspace{-.2cm}
+		\begin{center}
+			\includegraphics[width=0.9\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/h_adolfo}
+			
+			\begin{table}[]
+				\resizebox{8 cm}{!}{%
+					\begin{tabular}{cccc}
+						\hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ADOLFO GUEVARA, SE 42}}                           \\ \hline
+						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
+						5               & 1                     & 4                   & 43\%                        \\ \hline
+					\end{tabular}%
+				}
+			\end{table}
+			
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Total y Ocupación de Camas Hospitalarias en el Nivel II, 2021}
+		\vspace{-.5cm}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/nivel_2.pdf}
+		\end{center}
+		{\tiny Fuente de datos: Referencias, contrareferencias.} \hyperlink{indice}{\beamergotobutton{Índice}} 
+	\end{frame}
+	
+	
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\textit{}-----------------------------------------
+% SECCIÓN 3: Indicadores por Provincias
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\section{Indicadores por Provincias}
+	\begin{frame}[label=semaforo]
+		\frametitle{Tasa de Incidencia por Provincias, 2021}
+		\vspace{-.5cm}
+		
+		% en el input de las tablas sólo debe comenzar y terminar con tabular, borrar el tabular de input de la tabla
+		\begin{table}[]
+			\resizebox{\textwidth}{!}{%
+				\input{../tablas/tabla_incidencia_provincia.tex}
+			}
+		\end{table}
+		{\tiny PA: Prueba Antigénica, PM: Prueba Molecular}\\[0.5 cm]
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Tasa de Positividad por Provincias, 2021}
+		\vspace{-.5cm}
+		
+		% en el input de las tablas sólo debe comenzar y terminar con tabular, borrar el tabular de input de la tabla
+		\begin{table}[]
+			\resizebox{\textwidth}{!}{%
+				\input{../tablas/tabla_positividad_provincia.tex}
+			}
+		\end{table}	
+		{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+		
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Defunciones Cero por Provincias por Semana, 2021}
+		\vspace{-.5cm}
+		
+		% en el input de las tablas sólo debe comenzar y terminar con tabular, borrar el tabular de input de la tabla
+		\begin{table}[]
+			\resizebox{\textwidth}{!}{%
+				\input{../tablas/tabla_defunciones_cero_provincia.tex}
+			}
+		\end{table}	
+		{\tiny Fuente de datos: SINADEF. \\}
+				
+		$\rightarrow$ Notablemente, las provincias de Acomayo, Calca, Espinar, Paruro, Paucartambo han tenido \textbf{\color{mycolor5}una} defunción por COVID-19 en las últimas 8 semanas epidemológicas.
+		
+		$\rightarrow$ La última semana (SE42) sólo se registraron defunciones en Canas, Canchis, y Cusco.
+		
+	\end{frame}
+	
+	
+	\begin{frame}[label=indicadores_provinciales]
+		\frametitle{Tasa de Letalidad y Mortalidad, 2021}
+		\vspace{-.5cm}
+		
+		% en el input de las tablas sólo debe comenzar y terminar con tabular, borrar el tabular de input de la tabla
+		\begin{table}[]
+			\resizebox{\textwidth}{!}{%
+				\input{../tablas/tabla_letalidad_mortalidad_provincia.tex}
+			}
+		\end{table}
+		{\tiny Fuente de datos: SINADEF. \hyperlink{indice}{\beamergotobutton{Índice}} \\} 
+		
+		Ver detalles de la tendencia (2020 y 2021) de estos indicadores para cada provincia haciendo clic en los siguientes enlaces:\\ \hyperlink{Acomayo}{\beamergotobutton{Acomayo}} \hyperlink{Anta}{\beamergotobutton{Anta}} \hyperlink{Calca}{\beamergotobutton{Calca}} \hyperlink{Canas}{\beamergotobutton{Canas}} \hyperlink{Chumbivilcas}{\beamergotobutton{Chimbivilcas}}
+		\hyperlink{Canchis}{\beamergotobutton{Canchis}} \hyperlink{Cusco}{\beamergotobutton{Cusco}}
+		\hyperlink{Espinar}{\beamergotobutton{Espinar}}
+		\hyperlink{laconvencion}{\beamergotobutton{La Convencion}}
+		\hyperlink{Paruro}{\beamergotobutton{Paruro}} \hyperlink{Paucartambo}{\beamergotobutton{Paucartambo}}
+		\hyperlink{Quispicanchi}{\beamergotobutton{Quispicanchi}}
+		\hyperlink{Urubamba}{\beamergotobutton{Urubamba}}
+	\end{frame}
+
+%-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\textit{}-----------------------------------------
+% SECCIÓN 4: Resúmen y Recomendaciones
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+\section{Resumen }
+
+\begin{frame}[label=resumen]
+	\frametitle{Análisis Situacional por COVID-19: Resumen}
+	\vspace{-.5cm}
+	\begin{itemize}
+		\item La Región de Cusco aún se ubica en el \textbf{\color{mycolor4}séptimo lugar} de \textbf{\color{mycolor3}mortalidad} acumulada a nivel nacional, con una índice de propagación de $ 1.01 $.
+		\item Continua la \textbf{\color{mycolor4}desaceleración sostenida} en el número de \textbf{\color{mycolor3}casos} y defunciones por COVID-19. 
+		\item La \textbf{\color{mycolor3}tasa de positividad} para pruebas antigénicas se encuentra en \textbf{\color{mycolor4}descenso} con un $6\%$, manteniéndose en este rango durante las últimas doce semanas. Mientras que, la \textbf{\color{mycolor3}tasa de positividad} para pruebas moleculares disminuyó a un $11\%$ para la SE42.
+		\end{itemize}
+\end{frame}
+
+\begin{frame}[label=resumen]
+	\frametitle{Análisis Situacional por COVID-19: Resumen}
+	\vspace{-.5cm}
+	\begin{itemize}
+	\item La ocupación de camas \textbf{\color{mycolor3}UCI} aún es \textbf{\color{mycolor4} alta}, a pesar de haber disminuido a un $74\% $. 
+	\item La ocupación de camas \textbf{\color{mycolor3}no UCI}, se ha mantenido en descenso con un $13\%$. \textbf{\color{mycolor4}} 
+	\item La \textbf{\color{mycolor3}cobertura de vacunación regional} para COVID-19, muestra una \textbf{\color{mycolor4}cobertura por encima del 70\% para los grupos etarios mayores a 50 años}, con una brecha más amplia en los grupos etarios menores a 39 años.
+	
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[label=recomendaciones]
+	\frametitle{Análisis Situacional por COVID-19: Resumen}
+	\vspace{-.5cm}
+	\begin{itemize}
+		\item Semáforo epidemiológico regional
+		\begin{itemize}
+			\item Tasa de crecimiento semanal de \textbf{\color{mycolor4}casos} en \textbf{\color{mycolor3}verde}.
+			\item Tasa de crecimiento semanal de \textbf{\color{mycolor4}defunciones} en \textbf{\color{mycolor3}verde}.
+			\item Tasa de \textbf{\color{mycolor4}positividad} de pruebas \textbf{\color{mycolor4}antigénicas} en verde y de prueba moleculares en ámbar.
+			\item Disponibilidad de \textbf{\color{mycolor4}camas hospitalarias}: no UCI: en \textbf{\color{mycolor3}verde} el III y nivel II.
+			\item Disponibilidad de camas hospitalarias: \textbf{\color{mycolor4}UCI} en \textbf{\color{mycolor3}rojo}.
+		\end{itemize} 
+		\item Semáforo epidemiológico a nivel provincial
+		\begin{itemize}
+			\item Todas las provincias presentan desaceleración de casos y defunciones para la SE 42. El exceso regional de mortalidad general es de -2.
+	
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[label=recomendaciones]
+	\frametitle{Análisis Situacional por COVID-19: Recomendaciones}
+	\vspace{-.5cm}
+	\begin{itemize}
+			\item Reforzar medidas de control por comandos C19 provinciales y distritales
+			\item Campañas de comunicación, traducir mensajes claros, consistentes y constantes
+			\item Énfasis en distanciamiento social, mascarilla, lavado de manos, aislamiento temprano si hay síntomas
+			\item Asegurar aislamiento efectivo a personas con síntomas por 10 días y cuarentena de contactos cercanos por 14 días
+			\item Aislamiento desde la llamada, no depender de la prueba
+			\item Dar oxímetro, canasta de alimentos, monitoreo telefónico. 
+			\item EPP bien usado – considerar que todos los pacientes son potenciales infectados
+			\item Detectar y prevenir brotes nosocomiales
+			
+		\end{itemize} 
+
+\end{frame}
+
+\section{Links Útiles}
+
+\begin{frame}[label=links]
+	\frametitle{Links Útiles}
+	\vspace{-.5cm}
+	\begin{itemize}
+		\item Encuentre {\color{mycolor4} información de la pandemia actualizada diaria a nivel regional, provincial, y distrital} en nuestro {\color{mycolor4}\textbf{Dashboard GERESA}} haciendo clic \href{https://geresacusco.shinyapps.io/DASHBOARD_COVID-19_CUSCO/}{\color{mycolor2}aquí}.
+		\item Encuentre información actualizada de los {\color{mycolor4}Mapas de Calor COVID-19} en el haciendo clic \href{http://www.diresacusco.gob.pe/diresa/}{\color{mycolor2}aquí}.
+		\item Encuentre información diaria del {\color{mycolor4} Resumen de la Sala Situacional COVID-19} de la Región haciendo clic \href{https://app.powerbi.com/view?r=eyJrIjoiZDdiMzA4YWMtZTZmNC00ZWE2LWFmMmYtODkwZmM1ODhiYTljIiwidCI6IjM2NGE0NmEwLTk0YzctNGZkNi1iYTNjLTlmMmQzMjA5YzFlZiJ9}{\color{mycolor2}aquí}.
+		\item Encuentre información resumen cuatro semanas de la situación epidemiológica de COVID-19 en los {\color{mycolor4}Boletines COVID-19} haciendo clic \href{https://sites.google.com/view/geresacusco/boletines-epidemiologicos-covid-19}{\color{mycolor2}aquí}. \hyperlink{indice}{\beamergotobutton{Índice}}
+	\end{itemize}
+
+\end{frame}
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% APÉNDICE
+%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+%\backupbegin
+
+%\setbeamercovered{invisible}
+%\begin{frame}[plain,noframenumbering]
+%	\titlepage
+%\end{frame}
+
+\appendix
+\section{Apéndice}
+
+\subsection{Vacunación por Provincias y Grupo de Edad}
+
+\begin{frame}[label=vacunas_70]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 70 a 79 años}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_7.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_60]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 60 a 69 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_6.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+	\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_50]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 50 a 59 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_5.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_40]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 40 a 49 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_4.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_30]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 30 a 39 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_3.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_20]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 20 a 29 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_2.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\begin{frame}[label=vacunas_10]
+	\frametitle{Porcentaje de Cobertura de Vacunación de 12 a 19 años, Provincias de Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={.2cm .5cm .2cm .2cm},clip]{../figuras/vacunacion_provincial_edad_1.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SICOVAC - HIS MINSA, Dirección de Estadística GERESA Cusco. \\}
+\hyperlink{cobertura_vacuna_provincias}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Acomayo}
+
+\begin{frame}[label=Acomayo]
+	\frametitle{Incidencia y Mortalidad, Provincia Acomayo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_1.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Acomayo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_1.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Acomayo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_1.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Anta}
+
+\begin{frame}[label=Anta]
+	\frametitle{Incidencia y Mortalidad, Provincia Anta}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_2.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Anta}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_2.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Anta}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_2.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+
+\subsection{Calca}
+
+\begin{frame}[label=Calca]
+	\frametitle{Incidencia y Mortalidad, Provincia Calca}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_3.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Calca}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_3.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, provincia Calca}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_3.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Canas}
+
+\begin{frame}[label=Canas]
+	\frametitle{Incidencia y Mortalidad, Provincia Canas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_4.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de positividad, Provincia Canas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_4.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, provincia Canas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_4.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Canchis}
+
+\begin{frame}[label=Canchis]
+	\frametitle{Incidencia y Mortalidad, Provincia Canchis}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_5.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Canchis}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_5.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Canchis}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_5.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Chumbivilcas}
+
+\begin{frame}[label=Chumbivilcas]
+	\frametitle{Incidencia y Mortalidad, Provincia Chumbivilcas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_6.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Chumbivilcas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_6.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Chumbivilcas}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_6.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Cusco}
+
+\begin{frame}[label=Cusco]
+	\frametitle{Incidencia y Mortalidad, Provincia Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_7.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_7.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Cusco}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_7.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Espinar}
+
+\begin{frame}[label=Espinar]
+	\frametitle{Incidencia y Mortalidad, Provincia Espinar}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_8.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Espinar}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_8.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Espinar}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_8.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+
+\subsection{La Convención}
+
+\begin{frame}[label=laconvencion]
+	\frametitle{Incidencia y Mortalidad, Provincia La Convención}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_9.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad,Provincia La Convención}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_9.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia La Convención}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_9.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Paruro}
+
+\begin{frame}[label=Paruro]
+	\frametitle{Incidencia y Mortalidad, Provincia Paruro}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_10.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Paruro}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_10.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Paruro}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_10.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Paucartambo}
+
+\begin{frame}[label=Paucartambo]
+	\frametitle{Incidencia y Mortalidad, Provincia Paucartambo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_11.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Paucartambo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_11.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las causas, provincia Paucartambo}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_11.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+
+\subsection{Quispicanchi}
+
+\begin{frame}[label=Quispicanchi]
+	\frametitle{Incidencia y Mortalidad, Provincia Quispicanchi}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_12.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Quispicanchi}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_12.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Quispicanchi}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_12.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.}
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Urubamba}
+
+\begin{frame}[label=Urubamba]
+	\frametitle{\large Incidencia y Mortalidad, Provincia Urubamba}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/incidencia_mortalidad_20_21_13.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID, SINADEF.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tasa de Positividad, Provincia Urubamba}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/positividad_20_21_13.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SISCOVID, NOTICOVID.}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Exceso de Defunciones por Todas las Causas, Provincia Urubamba}
+	\vspace{-.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../figuras/exceso_13.pdf}
+	\end{center}
+	{\tiny Fuente de datos: SINADEF.} \hyperlink{indice}{\beamergotobutton{Índice}} 
+	
+	\hyperlink{indicadores_provinciales}{\beamergotobutton{regresar}}
+\end{frame}
+
+\subsection{Mapas Variantes}
+	\begin{frame}[label=mapa_provincia_cusco]
+	\frametitle{Cantidad de Casos Variantes en la Provincia Cusco, 2021}
+	\begin{center}
+		\includegraphics[width=0.65\linewidth]{../figuras/variantes_distrital_cusco.pdf}
+	\end{center}
+	{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+	
+	\hyperlink{mapa_variantes}{\beamergotobutton{regresar}}
+	\end{frame}
+
+	\begin{frame}[label=mapa_distrital]
+	\frametitle{Cantidad de Casos Variantes en los Distritos de la Región Cusco, 2021}
+	\begin{center}
+		\includegraphics[width=0.55\linewidth]{../figuras/variantes_distrital.pdf}
+	\end{center}
+	{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+	
+	\hyperlink{mapa_variantes}{\beamergotobutton{regresar}}
+	\end{frame}
+
+	\begin{frame}[label=mapa_lambda]
+		\frametitle{Cantidad de Casos Variantes \textbf{Lambda} por Provincias, 2021}
+		\begin{center}
+			\includegraphics[width=0.55\linewidth]{../figuras/variantes_provincial_lambda.pdf}
+		\end{center}
+		{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+		
+		\hyperlink{mapa_variantes}{\beamergotobutton{regresar}}
+	\end{frame}
+
+	\begin{frame}[label=mapa_gamma]
+		\frametitle{Cantidad de Casos  Variante \textbf{Gamma} por Provincias, 2021}
+		\begin{center}
+			\includegraphics[width=0.55\linewidth]{../figuras/variantes_provincial_gamma.pdf}
+		\end{center}
+		{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+		
+		\hyperlink{mapa_variantes}{\beamergotobutton{regresar}}
+	\end{frame}
+	
+	\begin{frame}[label=mapa_delta]
+		\frametitle{Cantidad de Casos  Variante \textbf{Delta} por Provincias, 2021}
+		\begin{center}
+			\includegraphics[width=0.55\linewidth]{../figuras/variantes_provincial_delta.pdf}
+		\end{center}
+		{\tiny Fuente de datos: NETLAB Cusco, UNSAAC, UPCH.}
+		
+		\hyperlink{mapa_variantes}{\beamergotobutton{regresar}}
+	\end{frame}
+%\backupend
+
+\end{document}
