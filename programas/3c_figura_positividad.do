@@ -56,11 +56,13 @@ format positividad_pcr positividad_ag %12.0fc
 
 
 * Graficamos
-twoway (line positividad_pcr semana, lcolor("$mycolor3") lwidth(medthick)) ///
-(line positividad_ag semana, lcolor("$mycolor5") lwidth(medthick)) ///
-(scatter positividad_pcr semana, msymbol(none) mlabel(positividad_pcr) mlabcolor("$mycolor3") mlabsize(*0.9) mlabposition(12)) ///
-(scatter positividad_ag semana, msymbol(i) mlabel(positividad_ag) mlabcolor("$mycolor5") mlabsize(*0.9) mlabposition(12)) ///
-  ,xtitle("Semanas Epidemiológicas", size(*0.6)) ///
+twoway (line positividad_pcr semana, lcolor("$mycolor6") lwidth(medthick)) ///
+(line positividad_ag semana, lcolor("$mycolor7") lwidth(medthick)) ///
+(scatter positividad_pcr semana, msymbol(none) mlabel(positividad_pcr) mlabcolor("$mycolor6") mlabsize(*0.9) mlabposition(12)) ///
+(scatter positividad_ag semana, msymbol(i) mlabel(positividad_ag) mlabcolor("$mycolor7") mlabsize(*0.9) mlabposition(12)) ///
+  ,  ysize(5) xsize(6.1) ///
+  xtitle("Semanas Epidemiológicas", size(*0.6)) ///
+  ytitle("Tasa de Positividad (%)", size(*0.6)) ///
   ylabel(0(10)60, labsize(*0.60)) ///
   xlabel(1(2)$semana, labsize(*0.60)) ///
   plotregion(fcolor(white) lcolor(white)) ///
@@ -68,6 +70,6 @@ twoway (line positividad_pcr semana, lcolor("$mycolor3") lwidth(medthick)) ///
   bgcolor(white) ///
   ylabel(, nogrid) xlabel(, nogrid) ///
   legend(cols(2) label(1 "Positividad PCR (%)") label(2 "Positividad AG (%)") label(3 " ") label (4 " ") size(*0.6) order(1 2 3 4) region(fcolor(white) lcolor(white))) ///
-  text(5 $semana "{it:Acualizado al}" "{it:$fecha}", place(sw) box just(left) margin(l+4 t+1 b+1) width(21) size(small) color(white) bcolor("$mycolor4") fcolor("$mycolor4"))
+  text(5 $semana "{it:Acualizado al}" "{it:$fecha}", place(sw) box just(left) margin(l+4 t+1 b+1) width(21) size(small) color(white) bcolor("$mycolor4") fcolor("$mycolor4")) name(tasa_pos, replace)
   
 graph export "figuras\positividad_diaria.png", as(png) replace  

@@ -62,7 +62,7 @@ replace mortalidad = total_defuncion/66439*10000 if provincia_ubigeo == 813
 label define provincia_ubigeo 801 "Cusco" 802 "Acomayo" 803 "Anta" 804 "Calca" 805 "Canas" 806 "Canchis" 807 "Chumbivilcas" 808 "Espinar" 809 "La Convención" 810 "Paruro" 811 "Paucartambo" 812 "Quispicanchi" 813 "Urubamba"
 label values provincia_ubigeo provincia_ubigeo
 
-graph hbar mortalidad, ///
+graph hbar mortalidad, ysize(5) xsize(6.1)  ///
 over(provincia_ubigeo, sort(mortalidad) descending) ///
 plotregion(fcolor(white)) ///
 graphregion(fcolor(white)) ///
@@ -95,7 +95,7 @@ replace incidencia = total_positivo/92989*10000 if provincia_ubigeo == 812
 replace incidencia = total_positivo/66439*10000 if provincia_ubigeo == 813
 
 
-graph hbar incidencia, ///
+graph hbar incidencia, ysize(5) xsize(6.1)  ///
 over(provincia_ubigeo, sort(incidencia) descending) ///
 plotregion(fcolor(white)) ///
 graphregion(fcolor(white)) ///

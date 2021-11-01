@@ -18,6 +18,9 @@ replace tipo = 1 if positivo_rapida == 1
 replace tipo = 2 if positivo_molecular == 1
 replace tipo = 3 if positivo_antigenica == 1
 
+* Ordenar por tipo
+sort tipo
+
 * Borrar los que no son positivos
 drop if tipo == .
 

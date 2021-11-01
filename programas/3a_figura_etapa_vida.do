@@ -38,7 +38,7 @@ label define genero 1 "Femenino" 2 "Masculino"
 label values genero genero
 
 * Defunciones
-graph hbar (count) if defuncion == 1, ///
+graph hbar (count) if defuncion == 1, ysize(5) xsize(6.1) ///
 over(genero) ascategory asyvar bar(1, color("$mycolor3")) bar(2, color("$mycolor7")) ///
 over(grupo_edad) blabel(total) ///
 plotregion(fcolor(white)) ///
@@ -54,7 +54,7 @@ legend(label(1 "Femenino") label(2 "Masculino") size(*0.8) region(col(white))) n
 graph export "figuras\defunciones_etapavida.png", as(png) replace
 
 * Casos
-graph hbar (count) if positivo == 1, ///
+graph hbar (count) if positivo == 1, ysize(5) xsize(6.1)  ///
 over(genero) ascategory asyvar bar(1, color("$mycolor2")) bar(2, color("$mycolor6")) ///
 over(grupo_edad) blabel(total) ///
 plotregion(fcolor(white)) ///

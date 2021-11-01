@@ -24,7 +24,7 @@ global user 1
 *ssc install shp2dta
 
 * Acción requerida: definir la fecha actual y la semana epidemiológica
-global fecha 29oct2021
+global fecha 31oct2021
 global semana 43
 
 * Tiempo de corrida: alrededor de 7 minutos
@@ -75,7 +75,7 @@ gr export "figuras/paleta_colores.png", as(png) replace
 	*do "programas/1g_base_sinadef_covid_2020"
 	do "programas/1h_base_sinadef_covid_2021"
 	do "programas/1i_base_unir"
-	*do "programas/1j_datos_mapa_calor" /// semanal 
+	do "programas/1j_datos_mapa_calor" // semanal 
 	
 * 2. Generar datos a nivel regional y provincial
 	do "programas/2a_series_diarias_region"
@@ -95,15 +95,15 @@ gr export "figuras/paleta_colores.png", as(png) replace
 	do "C:\Users\HP\Documents\GitHub\covid-cusco\dashboard-covid-geresa\data\MasterDofile"
 
 * 4. Figuras para la "Sala Situacional COVID-19" Semanal
-	do "programas/2d_series_semanales_region" /// Generar datos semanales region
+	do "programas/2d_series_semanales_region" // Generar datos semanales region
 	do "programas/4a_figura_casos_def_positi_region"
 	do "programas/4b_figura_mortalidad_edad_region"
 	
-	do "programas/2e_series_semanales_provincias" /// Generar datos semanales provincias
+	do "programas/2e_series_semanales_provincias" // Generar datos semanales provincias
 	do "programas/4c_figura_inci_mort_positi_provincial"
 	
 	** Datos para los excesos de defunciones
-	*do "programas/1l_datos_defunciones_reg_prov_2019" /// datos del 2019
+	*do "programas/1l_datos_defunciones_reg_prov_2019" // datos del 2019
 	do "programas/1m_datos_defunciones_2020_2021_regional"
 	do "programas/1n_datos_defunciones_2020_2021_provincial"
 	do "programas/4d_figura_exceso_regional"
