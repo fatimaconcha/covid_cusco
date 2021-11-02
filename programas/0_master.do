@@ -24,7 +24,7 @@ global user 1
 *ssc install shp2dta
 
 * Acción requerida: definir la fecha actual y la semana epidemiológica
-global fecha 31oct2021
+global fecha 01nov2021
 global semana 43
 
 * Tiempo de corrida: alrededor de 7 minutos
@@ -75,7 +75,7 @@ gr export "figuras/paleta_colores.png", as(png) replace
 	*do "programas/1g_base_sinadef_covid_2020"
 	do "programas/1h_base_sinadef_covid_2021"
 	do "programas/1i_base_unir"
-	do "programas/1j_datos_mapa_calor" // semanal 
+	*do "programas/1j_datos_mapa_calor" // semanal 
 	
 * 2. Generar datos a nivel regional y provincial
 	do "programas/2a_series_diarias_region"
@@ -93,7 +93,9 @@ gr export "figuras/paleta_colores.png", as(png) replace
 	do "programas/1k_datos_dashboard"
 	** Cambiar la dirección si es necesario
 	do "C:\Users\HP\Documents\GitHub\covid-cusco\dashboard-covid-geresa\data\MasterDofile"
-
+	
+	* Ocupación de camas (semanalmente)
+	do "C:\Users\HP\Documents\GitHub\covid-cusco\dashboard-covid-geresa\data\source1_camas\main"
 * 4. Figuras para la "Sala Situacional COVID-19" Semanal
 	do "programas/2d_series_semanales_region" // Generar datos semanales region
 	do "programas/4a_figura_casos_def_positi_region"
