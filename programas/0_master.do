@@ -111,6 +111,9 @@ gr export "figuras/paleta_colores.png", as(png) replace
 
 	* Hospitalización
 	do "programas/4f_figuras_hospitales"
+	
+	* Tabla cero defunciones
+	do "programas\4z_tabla_cero_defunciones.do"
 
 * 5. Secuenciamiento
 	do "programas\5a_base_secuenciamiento_netlab"
