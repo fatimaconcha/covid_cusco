@@ -98,8 +98,8 @@ gr export "figuras/paleta_colores.png", as(png) replace
 	**do "C:\Users\HP\Documents\GitHub\covid-cusco\dashboard-covid-geresa\data\source1_camas\main"
 * 4. Figuras para la "Sala Situacional COVID-19" Semanal
 	do "programas/2d_series_semanales_region" // Generar datos semanales region
-	do "programas/4a_figura_casos_def_positi_region"
-	do "programas/4b_figura_mortalidad_edad_region"
+	do "programas/4a_figura_casos_def_region"
+	do "programas/4b_figura_mort_edad_region"
 	
 	do "programas/2e_series_semanales_provincias" // Generar datos semanales provincias
 	do "programas/4c_figura_inci_mort_positi_provincial"
