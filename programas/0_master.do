@@ -33,8 +33,8 @@ timer on 1
 * Definir los colores de las gráficas
 * Colores
 global mycolor1 "236 244 244"
-global mycolor2 "164 92 92"
-global mycolor3 "252 196 108"
+global mycolor2 "252 196 108" 
+global mycolor3 "164 92 92"
 global mycolor4 "76 60 52"
 global mycolor5 "164 248 208"
 global mycolor6 "116 112 112"

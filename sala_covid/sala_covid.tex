@@ -47,7 +47,7 @@
 %\usetheme{Szeged}
 %\usetheme{Warsaw}
 \makeatletter
-\definecolor{beamer@blendedblue}{RGB}{252, 196, 108} % changed this
+\definecolor{beamer@blendedblue}{RGB}{164, 92, 92} % changed this
 
 %\setbeamercolor{normal text}{fg=black,bg=white}
 %\setbeamercolor{alerted text}{fg=red}
@@ -65,8 +65,8 @@
 \usecolortheme{dolphin}
 \usepackage{color}
 \definecolor{mycolor1}{RGB}{236, 244, 244}
-\definecolor{mycolor2}{RGB}{164, 92, 92}	
-\definecolor{mycolor3}{RGB}{252, 196, 108}
+\definecolor{mycolor2}{RGB}{252, 196, 108}
+\definecolor{mycolor3}{RGB}{164, 92, 92}
 \definecolor{mycolor4}{RGB}{76, 60, 52}
 \definecolor{mycolor5}{RGB}{164, 248, 208}
 \definecolor{mycolor6}{RGB}{116, 112, 112}
@@ -146,10 +146,10 @@
 	\end{frame}
 }
 
-\title{Sala Situacional COVID-19, Región Cusco\footnote{Análisis con información de la región hasta el 23 de octubre del 2021}}
+\title{Sala Situacional COVID-19, Región Cusco\footnote{Análisis con información de la región hasta el 30 de octubre del 2021}}
 \author{Fatima Concha \& Johar Cassa} 
 \institute{Dirección de Epidemiología e Investigación \\ \textbf{\color{mycolor3}DEIS, GERESA - Cusco}}
-\date{Semana Epidemiológica 42, 2021}
+\date{Semana Epidemiológica 43, 2021}
 
 \begin{document}
 	%------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -212,9 +212,9 @@
 			%\label{fig:70 a 79 años}
 		\end{subfigure}
 	\end{figure}
-	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021. \\
 		Sierra Selva Sur: Apurimac, Ayacucho, Cusco, Madre de Dios, Puno. \\
-		En Lima: Delta domina totalmente, ($ \sim100\% $), pocas muestras. \\
+		En Lima: Delta domina totalmente, ($ \sim100\% $), pocas muestras. Otras variantes casi desaparecen.\\
 		Delta domina completamente en Lima y todas las macro-regiones. \\} 
 	\vspace{0.01cm}
 	$\rightarrow$ La variante delta (línea verde) se presenta con mayor frecuencia en la Sierra Selva Sur como en la capital. 
@@ -227,11 +227,11 @@
 		\includegraphics[width=0.9\linewidth]{../sala_nacional/vacunas_nacional.png} 
 	\end{center}
 	\begin{tikzpicture}[overlay]
-		\draw[mycolor2, very thick] (4.6,3.17) circle [x radius=4.0cm, y radius=.11cm, rotate=0];
+		\draw[mycolor5, very thick] (4.6,3.05) circle [x radius=4.0cm, y radius=.11cm, rotate=0];
 	\end{tikzpicture}
-	{\tiny Fuente: Juan Carbajal ($@$juank23\_7). Consultado el 23 de octubre del 2021. \\} 
+	{\tiny Fuente: Juan Carbajal ($@$juank23\_7). Consultado el 29 de octubre del 2021. \\} 
 	\vspace{0.01cm}
-	$\rightarrow$ Cusco está en el puesto 14.
+	$\searrow$ Cusco pasa al puesto 15.
 \end{frame}
 
 \begin{frame}
@@ -241,11 +241,11 @@
 			\includegraphics[width=0.75\linewidth]{../sala_nacional/mortalidad_regional.png}
 		\end{center}
 		\begin{tikzpicture}[overlay]
-		\draw[mycolor2, ultra thick] (3.5,4.70) circle [x radius=2.cm, y radius=.13cm, rotate=0];
+		\draw[mycolor2, thick] (3.5,4.53) circle [x radius=2.cm, y radius=.13cm, rotate=0];
 		\end{tikzpicture}
-		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\}
+		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021. \\}
 \vspace{0.01cm}
-$\rightarrow$ Cusco se mantiene en el puesto 7, con $ 3,233 $ defunciones por COVID-19 por millón de habitantes. \\
+$\nearrow$ Cusco sube al puesto 8, con $ 3,238 $ defunciones por COVID-19 por millón de habitantes. \\
 	\end{frame}
 
 \begin{frame}
@@ -257,15 +257,14 @@ $\rightarrow$ Cusco se mantiene en el puesto 7, con $ 3,233 $ defunciones por CO
 \begin{tikzpicture}[overlay]
 	\draw[mycolor2, ultra thick] (5.3,3.62) circle [x radius=3.8cm, y radius=.2cm, rotate=0];
 \end{tikzpicture}
-{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021.\\
+{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021.\\
 	Nota 1: Records semanales de pandemia (rojo) y 2a ola (amarillo). \\
-Nota 2: Sube $ 14.5.4\% $, 21 fallecidos más. \\
-Alza alta en Lima metropolitana  y resto del país. 
-Mayor alza en costa central. \\
-\textbf{Riesgos}: Lima metropolitana con tres subidas en cinco semanas. Mayor disparidad esta semana. Piura sube, nunca se acercó a cero, otros indicadores suben. \\
-\textbf{Estancamiento}: Casi todas las alzas son leves. Trece regiones suben poco o están estancadas($\pm 1$).\\} 
+Nota 2: Baja 4.1\%, 7 fallecidos menos. Resto del país sube 6.5\%, segunda semana al alza. \\
+Mayor alza en el sur. \\
+\textbf{Riesgos}: Sierra/selva sur crece dos semanas. Disparidad regional en alza. Piura nunca se acercó a cero, otros indicadores suben. \\
+\textbf{Estancamiento}: Pocas alzas, todas leves. Catorce regiones estancadas ($\pm 1$).\\} 
 \vspace{0.01cm}
-$\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del pico de la segunda ola, la semana anterior fue de $4.43\%$. \\
+$\rightarrow$ {\color{mycolor5}Cusco}: Las defunciones representan un $4.43\% $ del pico de la segunda ola, similar a la semana anterior. \\
 \end{frame}
 	
 	\begin{frame}
@@ -275,12 +274,12 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 			\includegraphics[width=0.71\linewidth]{../sala_nacional/rt_regional.png}
 		\end{center}
 		\begin{tikzpicture}[overlay]
-		\draw[mycolor2, ultra thick] (5.75,3.87) circle [x radius=3.4cm, y radius=.18cm, rotate=0];
+		\draw[mycolor2, ultra thick] (5.75,4.27) circle [x radius=3.4cm, y radius=.18cm, rotate=0];
 		\end{tikzpicture}
-	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-21.\\}
+	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-28.\\}
 	\vspace{0.01cm}
 	$\rightarrow$ El número reproductivo efectivo (RT) indica la dinámica de la enfermedad; si es menor a $ 1 $, existe control de la epidemia. \\
-	$\nearrow$ Cusco sube a la posición 12 con un RT de $1.01$ $ [0.88-1.14]$.
+	$\nearrow$ Cusco sube a la posición 9 con un RT de $0.97$ $ [0.84-1.1]$.
 
 	\end{frame}
 
@@ -293,12 +292,12 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 	\begin{tikzpicture}[overlay]
 	\draw[mycolor2, ultra thick] (4.05,4.0) circle [x radius=.55cm, y radius=.55cm, rotate=0];
 	\end{tikzpicture}
-	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\
-	Nota 1: Perú: 1039 camas libres, baja $3.3\%$. Lima: 296 camas libres, baja $ 9.5\% $. \\
-	Suben $ >1\% $ {\color{red}*}  Huancavelica (4.5\%), Ayacucho (1.8\%), Madre de Dios (3.2\%), Arequipa (1.3\%) y Moquegua (5.2\%) en el sur, y Tumbes (16.7\%), Piura (6.0\%), La Libertad (4.8\%) y Lima región (4.2\%) en la costa norte y centro. Tumbes y Piura repiten {\color{red}**}. Semanas previas: 6, 5, 5 y 7 regiones. \\ 
-	Muy > que media: Piura (65\%), Ancash (56\%), Lima metropolitana (55\%), Callao (59\%), Loreto (54\%) y {\color{mycolor5}Cusco} (57\%).\\}
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021. \\
+	Nota 1: Perú: 1027 camas libres, baja $1.2\%$. Lima: 298 camas libres, sube $ 1.7\% $. \\
+	Suben $ >1\% $ {*} Tumbes (4.0\%), Piura (2.7\%), La Libertad (3.7\%), Ancash (4.4\%), Lima región (5.2\%), Lima metropolitana (1.1\%) e Ica (4.4\%) en la costa centro-norte, Apurímac (4.2\%), {\color{mycolor2}Cusco} (1.4\%), Madre de Dios (4.4\%) y Puno (1.8\%) en la sierra/selva sur más Huánuco (3.4\%) y Cajamarca (2.1\%) \\ Madre de Dios sube cuatro semanas, Tumbes, Piura y Lima región suben tres, La Libertad dos y Junín sube dos de las últimas tres semanas {\color{red}***}. Semanas previas: 9, 6, 5 y 5 regiones. \\ 
+	Muy > que media: Piura (67\%), Ancash (60\%), Lima metropolitana (56\%) y {\color{mycolor2}Cusco} (59\%), todas subieron.\\}
 	\vspace{0.01cm}
-	$\rightarrow$ Cusco mantiene el nivel de ocupación con respecto a la semana anterior.
+	$\nearrow$ Cusco aumenta el nivel de ocupación con respecto a la semana anterior.
 \end{frame}
 
 	\begin{frame}
@@ -308,11 +307,11 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 		\includegraphics[width=0.75\linewidth]{../sala_nacional/uci_regional.png}
 	\end{center}
 	\begin{tikzpicture}[overlay]
-	\draw[mycolor2, thick] (5.1,2.25) circle [x radius=3.9cm, y radius=.15cm, rotate=0];
+	\draw[mycolor2, thick] (5.1,2.11) circle [x radius=3.9cm, y radius=.15cm, rotate=0];
 \end{tikzpicture}
-	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021.\\}
+	{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021.\\}
 	\vspace{0.1cm}
-	$\searrow$ Cusco pasa a la posición 21.
+	$\searrow$ Cusco pasa a la posición 22.
 \end{frame}
 	
 	\begin{frame}
@@ -322,11 +321,11 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 			\includegraphics[width=0.75\linewidth]{../sala_nacional/nouci_regional.png} 
 		\end{center}
 		\begin{tikzpicture}[overlay]
-		\draw[mycolor2, thick] (3.5,2.89) circle [x radius=2.0cm, y radius=.15cm, rotate=0];
+		\draw[mycolor2, thick] (3.5,3.2) circle [x radius=2.0cm, y radius=.15cm, rotate=0];
 		\end{tikzpicture}
-		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 23 de octubre del 2021. \\} 
+		{\tiny Fuente: Lescano, Orellana, Fano, Pino, y Flores. Situación Epidemiológica de la COVID-19 al 30 de octubre del 2021. \\} 
 		\vspace{0.01cm}
-		$\nearrow$ Cusco se pasa al puesto 18.
+		$\nearrow$ Cusco se pasa al puesto 16.
 		
 		\hyperlink{indice}{\beamergotobutton{Índice}} 
 	\end{frame}
@@ -412,7 +411,7 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 	\begin{center}
 		\includegraphics[width=0.75\linewidth, trim={0cm .5cm 0cm 0.2cm},clip]{../sala_nacional/rt_cusco.png}
 	\end{center}
-	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-21. Reporte de número reproductivo efectivo (Rt) de COVID-19. Disponible haciendo clic en el siguiente enlace: \href{https://www.dge.gob.pe/portalnuevo/informacion-publica/reporte-de-numero-reproductivo-efectivo-rt/}{CDC-Rt}. \\}
+	{\tiny Fuente: CDC MINSA. Reporte de Vigilancia COVID-19, Perú 2021. Actualización: 2021-10-28. Reporte de número reproductivo efectivo (Rt) de COVID-19. Disponible haciendo clic en el siguiente enlace: \href{https://www.dge.gob.pe/portalnuevo/informacion-publica/reporte-de-numero-reproductivo-efectivo-rt/}{CDC-Rt}. \\}
 	\vspace{0.01cm}
 	$\rightarrow$ Para ver el número exacto de RT por distrito, haga clic en el siguiente link: \href{https://www.dge.gob.pe/portalnuevo/informacion-publica/reporte-de-numero-reproductivo-efectivo-rt/}{\color{mycolor3}reporte-vigilancia-minsa}. \\
 \end{frame}
@@ -535,7 +534,7 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 	
 	Ver detalles de estos indicadores para cada grupo de edad de las provincias haciendo clic en los siguientes enlaces:
 	\hyperlink{vacunas_70}{\beamergotobutton{70 a 79 años}}
-	\hyperlink{vacunas_60}{\beamergotobutton{60 a 69 años}} \hyperlink{vacunas_50}{\beamergotobutton{50 a 59 añosa}} \hyperlink{vacunas_40}{\beamergotobutton{40 a 49 años}} \hyperlink{vacunas_30}{\beamergotobutton{30 a 39 años}}
+	\hyperlink{vacunas_60}{\beamergotobutton{60 a 69 años}} \hyperlink{vacunas_50}{\beamergotobutton{50 a 59 años}} \hyperlink{vacunas_40}{\beamergotobutton{40 a 49 años}} \hyperlink{vacunas_30}{\beamergotobutton{30 a 39 años}}
 	\hyperlink{vacunas_20}{\beamergotobutton{20 a 29 años}} \hyperlink{vacunas_10}{\beamergotobutton{12 a 19 años}}
 	
 \end{frame}
@@ -557,7 +556,7 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 			\resizebox{8 cm}{!}{%
 				\begin{tabular}{cccc}
 					\hline
-					\multicolumn{4}{c}{\textbf{UCIN,   SE 42}}                                                   \\ \hline
+					\multicolumn{4}{c}{\textbf{UCIN,   SE 43}}                                                   \\ \hline
 					TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
 					25               & 12                   & 13                  & 61\%                        \\ \hline
 				\end{tabular}%
@@ -586,7 +585,7 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 				\resizebox{8 cm}{!}{%
 					\begin{tabular}{cccc}
 						\hline
-						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL REGIONAL, SE 42}}                                 \\ \hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL REGIONAL, SE 43}}                                 \\ \hline
 						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
 						6               & 5                    & 1                  & 86\%                        \\ \hline
 					\end{tabular}%
@@ -607,7 +606,7 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 				\resizebox{8 cm}{!}{%
 					\begin{tabular}{cccc}
 						\hline
-						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ANTONIO LORENA, SE 42}}                           \\ \hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ANTONIO LORENA, SE 43}}                           \\ \hline
 						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
 						5                & 1                    & 4                  & 43\%                        \\ \hline
 					\end{tabular}%
@@ -628,9 +627,9 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 				\resizebox{8 cm}{!}{%
 					\begin{tabular}{cccc}
 						\hline
-						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ADOLFO GUEVARA, SE 42}}                           \\ \hline
+						\multicolumn{4}{c}{\textbf{UCIN   HOSPITAL ADOLFO GUEVARA, SE 43}}                           \\ \hline
 						TOTAL CAMAS UCIN & CAMAS   UCIN OCUPADAS & CAMAS   UCIN LIBRES & PORCENTAJE   OCUPACIÓN UCIN \\ \hline
-						5               & 1                     & 4                   & 43\%                        \\ \hline
+						15               & 6                     & 8                   & 56\%                        \\ \hline
 					\end{tabular}%
 				}
 			\end{table}
@@ -693,9 +692,9 @@ $\searrow$ {\color{mycolor5}Cusco}. Las defunciones representan un $3.80\% $ del
 		\end{table}	
 		{\tiny Fuente de datos: SINADEF. \\}
 				
-		$\rightarrow$ Notablemente, las provincias de Acomayo, Calca, Espinar, Paruro, Paucartambo han tenido \textbf{\color{mycolor5}una} defunción por COVID-19 en las últimas 8 semanas epidemológicas.
+		$\rightarrow$ Notablemente, las provincias de Acomayo, Calca, Espinar, Paucartambo han tenido \textbf{\color{mycolor5}una} defunción por COVID-19 en las últimas 9 semanas epidemológicas.
 		
-		$\rightarrow$ La última semana (SE42) sólo se registraron defunciones en Canas, Canchis, y Cusco.
+		$\rightarrow$ La última semana (SE43) sólo se registraron defunciones en Chumbivilcas Cusco, y Paruro.
 		
 	\end{frame}
 	
