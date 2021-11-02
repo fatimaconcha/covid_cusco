@@ -91,7 +91,7 @@ gr export "figuras\variantes_distrital_cusco.pdf", as(pdf) replace
 
 ********************************************************************************
 * Tipos de Variantes a nivel provincial
-/*
+
 shp2dta using "mapas\PROVINCIAS.shp", database("mapas\provincial_db") coordinates("mapas\provincial_co") genid(id) genc(c) replace
 
 use "mapas\provincial_db", clear
@@ -190,7 +190,7 @@ save "${datos}\output\datos_variantes_provincias", replace
 merge 1:1 provincia using "mapas\mapa_provincial"
 
 * Dibujar el mapa
-spmap variantes using "${datos}\provincial_co", id(id) fcolor("$mycolor3" "$mycolor2" "$mycolor4" "$mycolor5") label(xcoord( x_c ) ycoord( y_c ) label(provincia)) name(gamma, replace)
+spmap variantes using "mapas\provincial_co", id(id) fcolor("$mycolor3" "$mycolor2" "$mycolor4" "$mycolor5") label(xcoord( x_c ) ycoord( y_c ) label(provincia)) name(gamma, replace)
 
 gr export "figuras\variantes_provincial_gamma.png", as(png) replace
 gr export "figuras\variantes_provincial_gamma.pdf", as(pdf) replace

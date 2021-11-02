@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.17)  2 NOV 2021 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.17)  2 NOV 2021 12:12
 entering extended mode
 **./sala_covid.tex
 (sala_covid.tex
@@ -2094,33 +2094,21 @@ input line 990.
 
  <../figuras/incidencia_mortalidad_20_21_4.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_4.pdf' not found on input lin
-e 999.
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_4.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_4.pdf, id=1156, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_4.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_4.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_4.pdf  used on input line
+ 999.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
+[66
 
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_4.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.999 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
-99.
-(C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [66
-
-]
+ <../figuras/positividad_20_21_4.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_4.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_4.pdf, id=1162, 397.485pt x 289.08pt>
+<../figuras/exceso_4.pdf, id=1174, 397.485pt x 289.08pt>
 File: ../figuras/exceso_4.pdf Graphic file (type pdf)
 <use ../figuras/exceso_4.pdf>
 Package pdftex.def Info: ../figuras/exceso_4.pdf  used on input line 1010.
@@ -2129,49 +2117,33 @@ Package pdftex.def Info: ../figuras/exceso_4.pdf  used on input line 1010.
 
  <../figuras/exceso_4.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_5.pdf' not found on
- input line 1021.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_5.pdf'
- not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1021 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_5.pdf
+): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_5.pdf, id=1203, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_5.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_5.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_5.pdf  used on 
+input line 1021.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [68
 
-]
+ <../figuras/incidencia_mortalidad_20_21_5.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_5.pdf' not found on input lin
-e 1030.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_5.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1030 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_5.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_5.pdf, id=1222, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_5.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_5.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_5.pdf  used on input line
+ 1030.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [69
 
-]
+ <../figuras/positividad_20_21_5.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_5.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_5.pdf, id=1202, 397.485pt x 289.08pt>
+<../figuras/exceso_5.pdf, id=1240, 397.485pt x 289.08pt>
 File: ../figuras/exceso_5.pdf Graphic file (type pdf)
 <use ../figuras/exceso_5.pdf>
 Package pdftex.def Info: ../figuras/exceso_5.pdf  used on input line 1041.
@@ -2180,49 +2152,33 @@ Package pdftex.def Info: ../figuras/exceso_5.pdf  used on input line 1041.
 
  <../figuras/exceso_5.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_6.pdf' not found on
- input line 1052.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_6.pdf'
- not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1052 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_6.pdf
+): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_6.pdf, id=1268, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_6.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_6.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_6.pdf  used on 
+input line 1052.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [71
 
-]
+ <../figuras/incidencia_mortalidad_20_21_6.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_6.pdf' not found on input lin
-e 1061.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_6.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1061 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_6.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_6.pdf, id=1287, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_6.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_6.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_6.pdf  used on input line
+ 1061.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [72
 
-]
+ <../figuras/positividad_20_21_6.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_6.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_6.pdf, id=1241, 397.485pt x 289.08pt>
+<../figuras/exceso_6.pdf, id=1305, 397.485pt x 289.08pt>
 File: ../figuras/exceso_6.pdf Graphic file (type pdf)
 <use ../figuras/exceso_6.pdf>
 Package pdftex.def Info: ../figuras/exceso_6.pdf  used on input line 1072.
@@ -2231,49 +2187,33 @@ Package pdftex.def Info: ../figuras/exceso_6.pdf  used on input line 1072.
 
  <../figuras/exceso_6.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_7.pdf' not found on
- input line 1083.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_7.pdf'
- not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1083 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_7.pdf
+): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_7.pdf, id=1334, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_7.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_7.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_7.pdf  used on 
+input line 1083.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [74
 
-]
+ <../figuras/incidencia_mortalidad_20_21_7.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_7.pdf' not found on input lin
-e 1092.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_7.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1092 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_7.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_7.pdf, id=1353, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_7.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_7.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_7.pdf  used on input line
+ 1092.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [75
 
-]
+ <../figuras/positividad_20_21_7.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_7.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_7.pdf, id=1281, 397.485pt x 289.08pt>
+<../figuras/exceso_7.pdf, id=1371, 397.485pt x 289.08pt>
 File: ../figuras/exceso_7.pdf Graphic file (type pdf)
 <use ../figuras/exceso_7.pdf>
 Package pdftex.def Info: ../figuras/exceso_7.pdf  used on input line 1103.
@@ -2282,49 +2222,33 @@ Package pdftex.def Info: ../figuras/exceso_7.pdf  used on input line 1103.
 
  <../figuras/exceso_7.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_8.pdf' not found on
- input line 1114.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_8.pdf'
- not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1114 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_8.pdf
+): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_8.pdf, id=1399, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_8.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_8.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_8.pdf  used on 
+input line 1114.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [77
 
-]
+ <../figuras/incidencia_mortalidad_20_21_8.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_8.pdf' not found on input lin
-e 1123.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_8.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1123 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_8.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_8.pdf, id=1418, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_8.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_8.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_8.pdf  used on input line
+ 1123.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [78
 
-]
+ <../figuras/positividad_20_21_8.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_8.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_8.pdf, id=1320, 397.485pt x 289.08pt>
+<../figuras/exceso_8.pdf, id=1436, 397.485pt x 289.08pt>
 File: ../figuras/exceso_8.pdf Graphic file (type pdf)
 <use ../figuras/exceso_8.pdf>
 Package pdftex.def Info: ../figuras/exceso_8.pdf  used on input line 1134.
@@ -2333,49 +2257,33 @@ Package pdftex.def Info: ../figuras/exceso_8.pdf  used on input line 1134.
 
  <../figuras/exceso_8.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_9.pdf' not found on
- input line 1146.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_9.pdf'
- not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1146 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_9.pdf
+): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_9.pdf, id=1465, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_9.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_9.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_9.pdf  used on 
+input line 1146.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [80
 
-]
+ <../figuras/incidencia_mortalidad_20_21_9.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_9.pdf' not found on input lin
-e 1155.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_9.pdf' not found
-: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1155 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_9.pdf): PDF inc
+lusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_9.pdf, id=1484, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_9.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_9.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_9.pdf  used on input line
+ 1155.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [81
 
-]
+ <../figuras/positividad_20_21_9.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_9.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_9.pdf, id=1360, 397.485pt x 289.08pt>
+<../figuras/exceso_9.pdf, id=1502, 397.485pt x 289.08pt>
 File: ../figuras/exceso_9.pdf Graphic file (type pdf)
 <use ../figuras/exceso_9.pdf>
 Package pdftex.def Info: ../figuras/exceso_9.pdf  used on input line 1166.
@@ -2384,49 +2292,33 @@ Package pdftex.def Info: ../figuras/exceso_9.pdf  used on input line 1166.
 
  <../figuras/exceso_9.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_10.pdf' not found o
-n input line 1177.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_10.pdf
-' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1177 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_10.pd
+f): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_10.pdf, id=1530, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_10.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_10.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_10.pdf  used on
+ input line 1177.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [83
 
-]
+ <../figuras/incidencia_mortalidad_20_21_10.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_10.pdf' not found on input li
-ne 1186.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_10.pdf' not foun
-d: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1186 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_10.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_10.pdf, id=1549, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_10.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_10.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_10.pdf  used on input lin
+e 1186.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [84
 
-]
+ <../figuras/positividad_20_21_10.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_10.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_10.pdf, id=1399, 397.485pt x 289.08pt>
+<../figuras/exceso_10.pdf, id=1567, 397.485pt x 289.08pt>
 File: ../figuras/exceso_10.pdf Graphic file (type pdf)
 <use ../figuras/exceso_10.pdf>
 Package pdftex.def Info: ../figuras/exceso_10.pdf  used on input line 1197.
@@ -2435,49 +2327,33 @@ Package pdftex.def Info: ../figuras/exceso_10.pdf  used on input line 1197.
 
  <../figuras/exceso_10.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_11.pdf' not found o
-n input line 1208.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_11.pdf
-' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1208 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_11.pd
+f): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_11.pdf, id=1596, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_11.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_11.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_11.pdf  used on
+ input line 1208.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [86
 
-]
+ <../figuras/incidencia_mortalidad_20_21_11.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_11.pdf' not found on input li
-ne 1217.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_11.pdf' not foun
-d: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1217 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_11.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_11.pdf, id=1615, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_11.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_11.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_11.pdf  used on input lin
+e 1217.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [87
 
-]
+ <../figuras/positividad_20_21_11.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_11.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_11.pdf, id=1439, 397.485pt x 289.08pt>
+<../figuras/exceso_11.pdf, id=1633, 397.485pt x 289.08pt>
 File: ../figuras/exceso_11.pdf Graphic file (type pdf)
 <use ../figuras/exceso_11.pdf>
 Package pdftex.def Info: ../figuras/exceso_11.pdf  used on input line 1228.
@@ -2486,49 +2362,33 @@ Package pdftex.def Info: ../figuras/exceso_11.pdf  used on input line 1228.
 
  <../figuras/exceso_11.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_12.pdf' not found o
-n input line 1240.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_12.pdf
-' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1240 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_12.pd
+f): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_12.pdf, id=1661, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_12.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_12.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_12.pdf  used on
+ input line 1240.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [89
 
-]
+ <../figuras/incidencia_mortalidad_20_21_12.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_12.pdf' not found on input li
-ne 1249.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_12.pdf' not foun
-d: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1249 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_12.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_12.pdf, id=1680, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_12.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_12.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_12.pdf  used on input lin
+e 1249.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [90
 
-]
+ <../figuras/positividad_20_21_12.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_12.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_12.pdf, id=1478, 397.485pt x 289.08pt>
+<../figuras/exceso_12.pdf, id=1698, 397.485pt x 289.08pt>
 File: ../figuras/exceso_12.pdf Graphic file (type pdf)
 <use ../figuras/exceso_12.pdf>
 Package pdftex.def Info: ../figuras/exceso_12.pdf  used on input line 1260.
@@ -2537,49 +2397,33 @@ Package pdftex.def Info: ../figuras/exceso_12.pdf  used on input line 1260.
 
  <../figuras/exceso_12.pdf>]
 
-LaTeX Warning: File `../figuras/incidencia_mortalidad_20_21_13.pdf' not found o
-n input line 1271.
-
-
-! Package pdftex.def Error: File `../figuras/incidencia_mortalidad_20_21_13.pdf
-' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1271 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/incidencia_mortalidad_20_21_13.pd
+f): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/incidencia_mortalidad_20_21_13.pdf, id=1727, 397.485pt x 289.08pt>
+File: ../figuras/incidencia_mortalidad_20_21_13.pdf Graphic file (type pdf)
+<use ../figuras/incidencia_mortalidad_20_21_13.pdf>
+Package pdftex.def Info: ../figuras/incidencia_mortalidad_20_21_13.pdf  used on
+ input line 1271.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [92
 
-]
+ <../figuras/incidencia_mortalidad_20_21_13.pdf>]
 
-LaTeX Warning: File `../figuras/positividad_20_21_13.pdf' not found on input li
-ne 1280.
-
-
-! Package pdftex.def Error: File `../figuras/positividad_20_21_13.pdf' not foun
-d: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1280 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+pdfTeX warning: pdflatex.exe (file ../figuras/positividad_20_21_13.pdf): PDF in
+clusion: found PDF version <1.6>, but at most version <1.5> allowed
+<../figuras/positividad_20_21_13.pdf, id=1746, 397.485pt x 289.08pt>
+File: ../figuras/positividad_20_21_13.pdf Graphic file (type pdf)
+<use ../figuras/positividad_20_21_13.pdf>
+Package pdftex.def Info: ../figuras/positividad_20_21_13.pdf  used on input lin
+e 1280.
+(pdftex.def)             Requested size: 245.83282pt x 166.47285pt.
 [93
 
-]
+ <../figuras/positividad_20_21_13.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ../figuras/exceso_13.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/exceso_13.pdf, id=1518, 397.485pt x 289.08pt>
+<../figuras/exceso_13.pdf, id=1764, 397.485pt x 289.08pt>
 File: ../figuras/exceso_13.pdf Graphic file (type pdf)
 <use ../figuras/exceso_13.pdf>
 Package pdftex.def Info: ../figuras/exceso_13.pdf  used on input line 1291.
@@ -2590,7 +2434,7 @@ Package pdftex.def Info: ../figuras/exceso_13.pdf  used on input line 1291.
 
 pdfTeX warning: pdflatex.exe (file ../figuras/variantes_distrital_cusco.pdf): P
 DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/variantes_distrital_cusco.pdf, id=1547, 478.14207pt x 289.08pt>
+<../figuras/variantes_distrital_cusco.pdf, id=1793, 478.14207pt x 289.08pt>
 File: ../figuras/variantes_distrital_cusco.pdf Graphic file (type pdf)
 <use ../figuras/variantes_distrital_cusco.pdf>
 Package pdftex.def Info: ../figuras/variantes_distrital_cusco.pdf  used on inpu
@@ -2602,7 +2446,7 @@ t line 1302.
 
 pdfTeX warning: pdflatex.exe (file ../figuras/variantes_distrital.pdf): PDF inc
 lusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/variantes_distrital.pdf, id=1565, 289.08pt x 337.57483pt>
+<../figuras/variantes_distrital.pdf, id=1811, 289.08pt x 337.57483pt>
 File: ../figuras/variantes_distrital.pdf Graphic file (type pdf)
 <use ../figuras/variantes_distrital.pdf>
 Package pdftex.def Info: ../figuras/variantes_distrital.pdf  used on input line
@@ -2618,7 +2462,7 @@ Overfull \vbox (13.28632pt too high) detected at line 1312
 
 pdfTeX warning: pdflatex.exe (file ../figuras/variantes_provincial_lambda.pdf):
  PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/variantes_provincial_lambda.pdf, id=1583, 289.08pt x 337.57483pt>
+<../figuras/variantes_provincial_lambda.pdf, id=1829, 289.08pt x 337.57483pt>
 File: ../figuras/variantes_provincial_lambda.pdf Graphic file (type pdf)
 <use ../figuras/variantes_provincial_lambda.pdf>
 Package pdftex.def Info: ../figuras/variantes_provincial_lambda.pdf  used on in
@@ -2630,7 +2474,7 @@ put line 1322.
 
 pdfTeX warning: pdflatex.exe (file ../figuras/variantes_provincial_gamma.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/variantes_provincial_gamma.pdf, id=1602, 289.08pt x 337.57483pt>
+<../figuras/variantes_provincial_gamma.pdf, id=1848, 289.08pt x 337.57483pt>
 File: ../figuras/variantes_provincial_gamma.pdf Graphic file (type pdf)
 <use ../figuras/variantes_provincial_gamma.pdf>
 Package pdftex.def Info: ../figuras/variantes_provincial_gamma.pdf  used on inp
@@ -2642,7 +2486,7 @@ ut line 1332.
 
 pdfTeX warning: pdflatex.exe (file ../figuras/variantes_provincial_delta.pdf): 
 PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<../figuras/variantes_provincial_delta.pdf, id=1620, 289.08pt x 337.57483pt>
+<../figuras/variantes_provincial_delta.pdf, id=1866, 289.08pt x 337.57483pt>
 File: ../figuras/variantes_provincial_delta.pdf Graphic file (type pdf)
 <use ../figuras/variantes_provincial_delta.pdf>
 Package pdftex.def Info: ../figuras/variantes_provincial_delta.pdf  used on inp
@@ -2670,20 +2514,20 @@ Package rerunfilecheck Info: File `sala_covid.out' has not changed.
 (rerunfilecheck)             Checksum: 2B1FB711E2414F5CD75C237A95E890DF;1498.
  ) 
 Here is how much of TeX's memory you used:
- 37952 strings out of 480790
- 909918 string characters out of 2898708
+ 37688 strings out of 480790
+ 900895 string characters out of 2898708
  1280723 words of memory out of 3000000
- 52737 multiletter control sequences out of 15000+200000
- 602393 words of font info for 92 fonts, out of 3000000 for 9000
+ 52509 multiletter control sequences out of 15000+200000
+ 602074 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,11n,103p,812b,737s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{provincias} has been referenced but does not exis
 t, replaced by a fixed one
 
-{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Use
-rs/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/
-HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/HP/AppD
-ata/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/HP/AppData
+{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:
+/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/
+HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/HP/
+AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/HP/AppData
 /Local/Programs/MiKTeX/fonts/enc/dvips/newpx/npxsups_t1.enc}<C:/Users/HP/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/HP/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/HP/AppData/Local
@@ -2696,12 +2540,11 @@ nts/type1/public/lm/lmss9.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/lm/lmssbx10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/lm/lmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/lm/lmsy6.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmtt10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/symbols/msam10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/newpx/npxsups-Regular.pfb>
-Output written on sala_covid.pdf (99 pages, 8014106 bytes).
+blic/amsfonts/symbols/msam10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/newpx/npxsups-Regular.pfb>
+Output written on sala_covid.pdf (99 pages, 9214684 bytes).
 PDF statistics:
- 1754 PDF objects out of 2073 (max. 8388607)
+ 1997 PDF objects out of 2073 (max. 8388607)
  300 named destinations out of 1000 (max. 500000)
- 798 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1007 words of extra memory for PDF output out of 10000 (max. 10000000)
 
